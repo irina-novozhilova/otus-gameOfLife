@@ -5,8 +5,8 @@
   "main": "./src/index.ts",
   "scripts": {
     "test": "jest",
-    "build": "webpack --env production",
-    "dev": "webpack serve --env development",
+    "build": "npx tsc --noEmit && webpack --env production",
+    "dev": "npx tsc --noEmit && webpack serve --env development",
     "test:coverage": "jest --coverage --colors",
     "lint": "npx tsc --noEmit && prettier --check . && eslint .",
     "lint:fix": "npx tsc --noEmit && prettier --write . && eslint . --fix",
