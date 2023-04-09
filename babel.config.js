@@ -9,7 +9,7 @@ module.exports = (api) => ({
           ? { node: "current" }
           : { chrome: "58", ie: "11" },
       },
-      '@babel/preset-typescript',
+      "@babel/preset-typescript",
     ],
   ],
 });
