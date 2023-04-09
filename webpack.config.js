@@ -6,11 +6,11 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const glob = require("glob");
 
 const pages = glob.sync("./src/pages/*.html");
-// const CopyWebpackPlugin = require("copy-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = (env) => ({
   entry: {
-    index: "./build/index.js",
+    index: "./build/src/index.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
